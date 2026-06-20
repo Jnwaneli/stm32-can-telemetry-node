@@ -24,7 +24,7 @@ Physical assembly and firmware bring-up are planned as the next phase.
 - 
 ## DRC Result
 
-![DRC Report](Portfolio_Images/DRC .png)
+![DRC Report](Portfolio_Images/DRC.png)
 
 ## Key Features
 
