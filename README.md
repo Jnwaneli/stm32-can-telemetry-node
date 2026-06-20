@@ -7,6 +7,11 @@ The STM32 CAN Telemetry Node is a custom STM32-based telemetry PCB designed in A
 Rev A includes protected 12 V input power, +5 V and +3.3 V regulation, an STM32F103C8T6 microcontroller, CAN transceiver interface, sensor input conditioning, SWD programming access, debug LEDs, test points, and mounting holes.
 
 Physical assembly and firmware bring-up are planned as the next phase.
+## Board Preview
+
+![STM32 CAN Telemetry PCB 3D Render](Portfolio_Images/STM32_CAN_Telemetry_Node_3D_Angled.png)
+
+![STM32 CAN Telemetry PCB Top View](Portfolio_Images/STM32_CAN_Telemetry_Node_Top_2D.png)
 
 ## Project Status
 
@@ -16,6 +21,10 @@ Physical assembly and firmware bring-up are planned as the next phase.
 - DRC passed with 0 warnings, 0 rule violations, and 0 unrouted nets
 - Manufacturing outputs generated
 - Bring-up and firmware validation planned
+- 
+## DRC Result
+
+![DRC Report](Portfolio_Images/DRC.png)
 
 ## Key Features
 
