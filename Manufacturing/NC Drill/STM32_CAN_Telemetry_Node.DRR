@@ -1,0 +1,22 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: STM32_CAN_Telemetry_Node.PcbDoc   6/19/2026  2:51:00 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : STM32_CAN_Telemetry_Node.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.711mm (28mil)                                           Round             56        PTH        459.08mm (18.07inch)
+T2      0.8mm (31mil)                                             Round             3         PTH        5.08mm (0.20inch)
+T3      1.02mm (40mil)                                            Round             14        PTH        126.15mm (4.97inch)
+T4      1.04mm (41mil)                                            Round             5         PTH        10.16mm (0.40inch)
+T5      1.4mm (55mil)                                             Round             4         PTH        15.24mm (0.60inch)
+T6      1.5mm (59mil)                                             Round             2         PTH        5.08mm (0.20inch)
+T7      1.6mm (63mil)                                             Round             11        PTH        210.84mm (8.30inch)
+T8      2.4mm (94mil)                                             Round             2         NPTH       25.40mm (1.00inch)
+T9      3.2mm (126mil)                                            Round             4         NPTH       217.00mm (8.54inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              101
+
+Total Processing Time (hh:mm:ss) : 00:00:00

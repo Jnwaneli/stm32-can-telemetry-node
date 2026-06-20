@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=00_Block_Diagram.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=00_Block_Diagram.SchDoc|FileName=01_Power.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=00_Block_Diagram.SchDoc|FileName=02_MCU.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=00_Block_Diagram.SchDoc|FileName=03_CAN.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=00_Block_Diagram.SchDoc|FileName=04_Sensors_IO.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=00_Block_Diagram.SchDoc|FileName=05_Connectors_Debug.SchDoc|SheetNumber=6
