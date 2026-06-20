@@ -1,0 +1,23 @@
+# Altium generated files
+History/
+__Previews__/
+__Previews/
+Project Logs*/
+Project Outputs*/
+
+# Altium temporary/cache files
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview
+*.log
+*.bak
+*.~*
+*.tmp
+
+# Windows/macOS clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Archives
+*.zip
