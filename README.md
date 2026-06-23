@@ -12,7 +12,11 @@ The hardware design is complete, routed, DRC-clean, and prepared for manufacturi
 
 ![STM32 CAN Telemetry PCB 3D Render](Portfolio_Images/STM32_CAN_Telemetry_Node_3D_Angled.png)
 
+**Figure 1.** 3D angled render of the STM32 CAN Telemetry Node Rev A PCB.
+
 ![STM32 CAN Telemetry PCB Top View](Portfolio_Images/STM32_CAN_Telemetry_Node_Top_2D.png)
+
+**Figure 2.** Top-side PCB layout view showing component placement, routing, connectors, mounting holes, and board labeling.
 
 ## Project Status
 
@@ -28,6 +32,8 @@ The hardware design is complete, routed, DRC-clean, and prepared for manufacturi
 ## DRC Result
 
 ![DRC Report](Portfolio_Images/DRC.png)
+
+**Figure 3.** Altium Designer DRC result showing 0 warnings, 0 rule violations, and 0 unrouted nets.
 
 ## Key Features
 
@@ -104,9 +110,15 @@ The starter firmware was configured in STM32CubeMX and generated for STM32CubeID
 
 ![STM32CubeMX Pinout](Portfolio_Images/STM32CubeMX_Pinout.png)
 
+**Figure 4.** STM32CubeMX pinout configuration showing ADC inputs, CAN pins, SWD debug pins, HSE crystal pins, GPIO LEDs, and user input signals.
+
 ![STM32CubeMX Clock Configuration](Portfolio_Images/STM32CubeMX_Clock_Config.png)
 
+**Figure 5.** STM32CubeMX clock configuration using the external 8 MHz HSE crystal with PLL configuration for the STM32F103 system clock.
+
 ![STM32CubeIDE Build Success](Portfolio_Images/STM32CubeIDE_Build_Success.png)
+
+**Figure 6.** STM32CubeIDE build output showing the starter firmware project building with 0 errors.
 
 ## Project Structure
 
