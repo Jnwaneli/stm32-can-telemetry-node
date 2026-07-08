@@ -26,6 +26,14 @@ The hardware design is complete, routed, DRC-clean, and prepared for manufacturi
 - Generated manufacturing outputs including BOM, Gerbers, drill files, pick-and-place files, and DRC report.
 - Created STM32CubeMX/CubeIDE starter firmware for ADC sampling, CAN payload packing, and 100 ms CAN transmit-loop structure.
 
+## What to Look At
+
+- `Portfolio_Images/` - PCB renders, DRC result, STM32CubeMX configuration, and STM32CubeIDE build screenshot.
+- `Manufacturing/` - Gerbers, drill files, BOM, pick-and-place files, and DRC report.
+- `Docs/Design_Report.pdf` - Full hardware design explanation and design decisions.
+- `Docs/CAN_Message_Map.xlsx` - Planned CAN frame structure and signal map.
+- `Firmware/` - STM32CubeMX / STM32CubeIDE starter firmware.
+
 ## Project Status
 
 - Schematic complete
