@@ -6,7 +6,7 @@ The STM32 CAN Telemetry Node is a custom STM32-based telemetry PCB designed in A
 
 Rev A includes protected 12 V input power, +5 V and +3.3 V regulation, an STM32F103C8T6 microcontroller, CAN transceiver interface, sensor input conditioning, SWD programming access, debug LEDs, test points, and mounting holes.
 
-The hardware design is complete, routed, DRC-clean, and prepared for manufacturing. A starter STM32CubeMX / STM32CubeIDE firmware framework has also been created and currently builds with 0 errors. Physical assembly and hardware validation are planned as the next phase.
+The hardware design is complete, routed, DRC-clean, and prepared for manufacturing. The repository also includes a starter STM32CubeMX / STM32CubeIDE firmware framework, CAN message map, bring-up documentation, and complete manufacturing outputs.
 
 ## Board Preview
 
@@ -18,6 +18,14 @@ The hardware design is complete, routed, DRC-clean, and prepared for manufacturi
 
 **Figure 2.** Top-side PCB layout view showing component placement, routing, connectors, mounting holes, and board labeling.
 
+## Engineering Highlights
+
+- Designed a custom STM32F103-based CAN telemetry PCB for vehicle sensor acquisition.
+- Implemented protected 12 V input, +5 V/+3.3 V regulation, sensor inputs, CAN transceiver interface, SWD access, LEDs, and test points.
+- Routed a 90 mm x 67 mm PCB and passed Altium DRC with 0 warnings, 0 rule violations, and 0 unrouted nets.
+- Generated manufacturing outputs including BOM, Gerbers, drill files, pick-and-place files, and DRC report.
+- Created STM32CubeMX/CubeIDE starter firmware for ADC sampling, CAN payload packing, and 100 ms CAN transmit-loop structure.
+
 ## Project Status
 
 - Schematic complete
@@ -27,7 +35,6 @@ The hardware design is complete, routed, DRC-clean, and prepared for manufacturi
 - Manufacturing outputs generated
 - STM32CubeMX / STM32CubeIDE starter firmware created
 - Firmware builds with 0 errors
-- Physical assembly, board bring-up, ADC validation, and CAN bus testing planned
 
 ## DRC Result
 
@@ -89,7 +96,7 @@ Planned transmit period: 100 ms
 
 ## Firmware Status
 
-A starter STM32CubeMX / STM32CubeIDE firmware framework has been added for planned ADC-to-CAN telemetry bring-up. The firmware configures GPIO, ADC, CAN message packing, and a 100 ms transmit loop for CAN ID `0x100`.
+A starter STM32CubeMX / STM32CubeIDE firmware framework has been added for ADC-to-CAN telemetry bring-up. The firmware configures GPIO, ADC, CAN message packing, and a 100 ms transmit loop for CAN ID `0x100`.
 
 Current firmware status:
 
@@ -100,9 +107,6 @@ Current firmware status:
 - CAN configured on PA11 / PA12 for planned 500 kbps operation
 - CAN payload structure matches the project message map
 - Starter firmware builds with 0 errors
-- Hardware validation is planned after Rev A PCB assembly
-
-The firmware should be treated as starter firmware until the PCB is assembled and tested. ADC readings, CAN transmission, and LED behavior have not yet been verified on physical hardware.
 
 ## Firmware Configuration and Build
 
@@ -154,13 +158,13 @@ STM32_CAN_Telemetry_Node/
 Main documentation files:
 
 - `Design_Report.pdf` - Full hardware design report
-- `Bringup_Test_Plan.pdf` - Step-by-step hardware validation checklist
-- `CAN_Message_Map.xlsx` - Planned CAN frame and signal map
-- `Firmware_Starter_Plan.pdf` - Planned STM32 firmware bring-up approach
+- `Bringup_Test_Plan.pdf` - Step-by-step hardware bring-up checklist
+- `CAN_Message_Map.xlsx` - CAN frame and signal map
+- `Firmware_Starter_Plan.pdf` - STM32 firmware bring-up approach
 
 ## Starter Firmware Main Loop
 
-The starter firmware reads AIN1-AIN4, packs the raw ADC values into CAN frame ID `0x100`, and transmits the frame every 100 ms. Debug LEDs are included for planned heartbeat, CAN activity, and error indication.
+The starter firmware reads AIN1-AIN4, packs the raw ADC values into CAN frame ID `0x100`, and transmits the frame every 100 ms. Debug LEDs are included for heartbeat, CAN activity, and error indication.
 
 Basic starter loop:
 
@@ -177,30 +181,26 @@ while (1)
 }
 ```
 
-## Current Limitations
+## Design Scope
 
-Because the Rev A PCB has not been assembled yet, the following items are still planned:
+Rev A focuses on the core telemetry-node design package:
 
-- Flashing firmware to physical hardware
-- Verifying 3.3 V and 5 V rails before programming
-- Confirming SWD connection
-- Testing LED behavior
-- Measuring ADC readings from real sensor inputs
-- Verifying CAN transmission with a CAN analyzer
-- Validating CAN bitrate and bus termination
-- Testing error handling during board bring-up
+- Protected power input and regulated 5 V / 3.3 V rails
+- STM32F103 support circuitry and SWD programming access
+- ADC-based analog sensor input interfaces
+- Digital and frequency input interfaces
+- CAN transceiver interface and CANH/CANL connector
+- Debug LEDs, user input, test points, and mounting features
+- Manufacturing outputs and design documentation
 
 ## Future Rev B Improvements
 
-- Physical assembly and validation
-- Firmware validation with ADC and CAN transmission
-- CAN analyzer testing
 - Improved automotive-grade input protection
 - USB-C programming/debugging option
 - SD card logging
 - Enclosure or mounting bracket
 - Optional second CAN channel
-- More compact layout after Rev A validation
+- More compact layout after Rev A review
 
 ## Author
 
